@@ -442,7 +442,6 @@
     fetch("https://script.google.com/macros/s/AKfycbxHf4YVdKSWE7D7Jem-zoBa0fOQz_qOk4RkYzbkokl3s9AtTny3v9HmYOUO5CxgXfEM/exec", {
       method: "POST", body: JSON.stringify(data)
     }).then(() => {
-      stopMusic();
       document.getElementById('name-section').style.display = 'none';
       document.getElementById('confirm-section').style.display = 'block';
     }).catch(() => {
